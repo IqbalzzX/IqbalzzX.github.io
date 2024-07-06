@@ -819,7 +819,7 @@ window.onload = function() {
        }
      }
     },
-    "x-request-time": "2024-07-02T05:42:53.250Z"
+    "x-request-time": new Date().toISOString()
   },
   "customOptions": {
     "displayRequestDuration": true
