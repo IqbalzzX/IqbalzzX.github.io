@@ -39,7 +39,6 @@ window.onload = function() {
         "required": true,
          "description": "blackbox Ai",
          "content": {
-         "application/json": {   
          "schema": {
          "type": "object",
          "properties": {
@@ -48,9 +47,8 @@ window.onload = function() {
             "default": "kapan indonesia merdeka?"
              }
            }
-         }
-       }
-     }
+	 }
+      }
    },
         "responses": {
            "200": {
