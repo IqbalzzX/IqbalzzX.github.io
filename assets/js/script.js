@@ -19,7 +19,7 @@ updateClock();
 
 function runtime() {
  
-$.getJSON(`https://${window.location.hostname}/hidden/runtime`, function(response) {
+$.getJSON(`https://${window.location.hostname}/runtime`, function(response) {
     $("#runtime").text(`${response.runtime}`)  
   })
 }
