@@ -57,14 +57,9 @@ function batteryStatus() {
 
 //ip
 function getip() {
-  	var xhr = new XMLHttpRequest();
-  	var url = "https://api.ipify.org?format=json";
-   	xhr.onloadend = function () {
-		  data = JSON.parse(this.responseText);
-		  document.getElementById("ip").textContent = data.ip;
-	};
-	xhr.open("GET", url, true);
-	xhr.send();
+  $.getJSON("https://api.ipify.org?format=json", function(response) {
+    $("#getip").text(`${response.ip}`)
+  })
 }
 
 getip()
