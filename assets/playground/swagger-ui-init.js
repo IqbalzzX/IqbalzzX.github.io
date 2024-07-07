@@ -31,25 +31,21 @@ window.onload = function() {
     ],
     "paths": {
       "/ai/blackbox": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Ai"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "blackbox Ai",
-         "content": {
-         "schema": {
-         "type": "object",
-         "properties": {
-           "text": {
-           "required": true,    
-            "default": "kapan indonesia merdeka?"
-             }
-           }
-	 }
-      }
-   },
+   	"parameters": [
+          {
+            "text": "query",
+            "in": "query",
+            "required": true,
+            "description": "Blackbox AI",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -64,27 +60,21 @@ window.onload = function() {
        }
      },
      "/ai/chatbot": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Ai"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Chatbot AI",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "text": {
-           "required": true,    
-            "default": "siapa nama kamu?"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "text": "query",
+            "in": "query",
+            "required": true,
+            "description": "Chatbot AI",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -99,27 +89,21 @@ window.onload = function() {
        }
      },
      "/ai/chatgpt": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Ai"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Chatgpt AI",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "text": {
-           "required": true,    
-            "default": "siapa nama kamu?"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "text": "query",
+            "in": "query",
+            "required": true,
+            "description": "Chatgpt AI",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -134,27 +118,21 @@ window.onload = function() {
        }
      },
      "/ai/goodyai": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Ai"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "goody AI",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "text": {
-           "required": true,    
-            "default": "kapan indonesia merdeka?"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "text": "query",
+            "in": "query",
+            "required": true,
+            "description": "Gooday AI",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -169,27 +147,21 @@ window.onload = function() {
        }
      },
      "/ai/talkai": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Ai"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "talk AI",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "text": {
-           "required": true,    
-            "default": "kapan indonesia merdeka?"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "text": "query",
+            "in": "query",
+            "required": true,
+            "description": "Talk AI",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -204,27 +176,21 @@ window.onload = function() {
        }
      },
      "/ai/talkai-img": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Ai"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "talk-img AI",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "text": {
-           "required": true,    
-            "default": "cat"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "text": "query",
+            "in": "query",
+            "required": true,
+            "description": "talkimg AI",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -239,27 +205,21 @@ window.onload = function() {
        }
      },
      "/ai/thinkany": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Ai"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "thinkany AI",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "text": {
-           "required": true,    
-            "default": "kapan indonesia merdeka?"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "text": "query",
+            "in": "query",
+            "required": true,
+            "description": "Thinkany AI",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -274,27 +234,21 @@ window.onload = function() {
        }
      },
   	"/downloader/capcut": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Downloader"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Downloader Capcut",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "url": {
-           "required": true,    
-            "default": "enter url parameters"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "url": "query",
+            "in": "query",
+            "required": true,
+            "description": "Downloader Capcut",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -309,27 +263,21 @@ window.onload = function() {
        }
      },
   	"/downloader/cocofun": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Downloader"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Downloader Cocofun",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "url": {
-           "required": true,    
-            "default": "enter url parameters"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "url": "query",
+            "in": "query",
+            "required": true,
+            "description": "Downloader Cocofun",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -344,27 +292,21 @@ window.onload = function() {
        }
      },
   	"/downloader/instagram": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Downloader"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Downloader Instagram",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "url": {
-           "required": true,    
-            "default": "enter url parameters"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "url": "query",
+            "in": "query",
+            "required": true,
+            "description": "Downloader Instagram",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -379,27 +321,21 @@ window.onload = function() {
        }
      },
   	"/downloader/like": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Downloader"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Downloader like",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "url": {
-           "required": true,    
-            "default": "enter url parameters"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "url": "query",
+            "in": "query",
+            "required": true,
+            "description": "Downloader Like",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -414,27 +350,21 @@ window.onload = function() {
        }
      },
      "/downloader/soundcloud": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Downloader"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Downloader SoundCloud",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "url": {
-           "required": true,    
-            "default": "enter url parameters"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "url": "query",
+            "in": "query",
+            "required": true,
+            "description": "Downloader SoundCloud",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -449,27 +379,21 @@ window.onload = function() {
        }
      },
      "/downloader/spotify": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Downloader"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Downloader track Spotify",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "url": {
-           "required": true,    
-            "default": "enter url parameters"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "url": "query",
+            "in": "query",
+            "required": true,
+            "description": "Downloader Spotify",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
    "responses": {
            "200": {
            "description": "Successfully operation"
@@ -484,27 +408,21 @@ window.onload = function() {
        }
      },
    "/downloader/snackvideo": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Downloader"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Downloader snackvideo",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "url": {
-           "required": true,    
-            "default": "enter url parameters"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "url": "query",
+            "in": "query",
+            "required": true,
+            "description": "Downloader Snackvideo",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -519,27 +437,21 @@ window.onload = function() {
        }
      },
 	"/downloader/tiktok": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Downloader"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Downloader Tiktok slide and video",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "url": {
-           "required": true,    
-            "default": "enter url parameters"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "url": "query",
+            "in": "query",
+            "required": true,
+            "description": "Downloader Tiktok",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -554,27 +466,21 @@ window.onload = function() {
        }
      },
      "/downloader/twitter": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Downloader"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Downloader twitter",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "url": {
-           "required": true,    
-            "default": "enter url parameters"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "url": "query",
+            "in": "query",
+            "required": true,
+            "description": "Downloader Twitter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -627,27 +533,21 @@ window.onload = function() {
        }
      },
      "/searching/soundcloud": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Searching"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Searching track SoundCloud",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "query": {
-           "required": true,    
-            "default": "somewhere we only know"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "query": "query",
+            "in": "query",
+            "required": true,
+            "description": "Searching SoundCloud",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -662,27 +562,21 @@ window.onload = function() {
        }
      },
      "/searching/spotify": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Searching"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Searching track Spotify",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "query": {
-           "required": true,    
-            "default": "somewhere we only know"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "query": "query",
+            "in": "query",
+            "required": true,
+            "description": "Searching Spotify",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -697,35 +591,39 @@ window.onload = function() {
        }
      },
       "/tools/qc": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Tools"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Tools Qc",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "text": {
-           "required": true,    
-            "default": "hai bwang"
-             },
-           "name": {
-           "required": true,    
-            "default": "sakura"
-             },
-           "imageUrl": {
-           "required": true,    
-            "default": "https://telegra.ph/file/4fa64ed06ca3687062314.jpg"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "text": "query",
+            "in": "query",
+            "required": true,
+            "description": "massukan parameter text",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "description": "massukan parameter name",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "imageUrl": "query",
+            "in": "query",
+            "required": true,
+            "description": "massukan parameter imageUrl",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
@@ -778,31 +676,30 @@ window.onload = function() {
        }
      },
      "/tools/ssweb": {
-      "post": { 	
+      "get": { 	
       "tags": [
           "Tools"
         ],
-   	"requestBody": {
-        "required": true,
-         "description": "Tools Ssweb",
-         "content": {
-         "application/json": {   
-         "schema": {
-         "type": "object",
-         "properties": {
-           "url": {
-           "required": true,    
-            "default": ""
-             },
-           "device": {
-           "required": true,    
-            "default": "desktop"
-             }
-           }
-         }
-       }
-     }
-   },
+   	"parameters": [
+          {
+            "url": "query",
+            "in": "query",
+            "required": true,
+            "description": "masukkan parameter url",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "device": "query",
+            "in": "query",
+            "required": true,
+            "description": "massukan parameter device",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
            "200": {
            "description": "Successfully operation"
