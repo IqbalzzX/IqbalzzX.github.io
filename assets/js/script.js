@@ -14,11 +14,8 @@ setInterval(updateClock, 1000);
 updateClock();
 
 
-// Runtime akurat
-
-
+// Runtime 
 function runtime() {
- 
 $.getJSON(`https://${window.location.hostname}/runtime`, function(response) {
     $("#runtime").text(`${response.runtime}`)  
   })
@@ -27,8 +24,17 @@ $.getJSON(`https://${window.location.hostname}/runtime`, function(response) {
 setInterval(runtime, 1000);
 runtime();
 
-//Visitor 
+// Runtime os
+function runtime-os() {
+$.getJSON(`https://${window.location.hostname}/runtime`, function(response) {
+    $("#runtime").text(`${response.runtime_os}`)  
+  })
+}
 
+setInterval(runtime-os, 1000);
+runtime-os();
+
+//Visitor 
 function visit() {
 $.getJSON("https://visitor-counter.kentodlahh11.workers.dev/visit?url=sakura-jade.vercel.app", function(response) {
   $("#visits").text(`${response.today} / ${response.total}`)  
@@ -37,8 +43,7 @@ $.getJSON("https://visitor-counter.kentodlahh11.workers.dev/visit?url=sakura-jad
   setInterval(visit, 100000);
 visit();
 
-//baterai abc ygy
-
+//batrai
 function batteryStatus() {
       navigator.getBattery().then(battery => {
         const status = battery.charging ? 'Charging': 'Discharging'
@@ -50,3 +55,11 @@ function batteryStatus() {
 
     batteryStatus()
 
+//ip
+function getip() {
+  $.getJSON("https://api.ipify.org?format=json", function(response) {
+   	$("#ip").text(`${response.ip}`)
+  })
+}
+
+getip()
