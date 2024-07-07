@@ -37,7 +37,8 @@ runtimeOs();
 //Visitor 
 function visit() {
 $.getJSON("https://visitor-counter.kentodlahh11.workers.dev/visit?url=sakura-jade.vercel.app", function(response) {
-  $("#visits").text(`${response.today} / ${response.total}`)  
+  //$("#visits").text(`${response.today} / ${response.total}`)  
+  $("#visits").text(`${response.total}`)  
 })
 }
   setInterval(visit, 100000);
