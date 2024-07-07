@@ -25,14 +25,14 @@ setInterval(runtime, 1000);
 runtime();
 
 // Runtime os
-function runtime-os() {
+function runtimeOs() {
 $.getJSON(`https://${window.location.hostname}/runtime`, function(response) {
-    $("#runtime").text(`${response.runtime_os}`)  
+    $("#runtimeOs").text(`${response.runtime_os}`)  
   })
 }
 
-setInterval(runtime-os, 1000);
-runtime-os();
+setInterval(runtimeOs, 1000);
+runtimeOs();
 
 //Visitor 
 function visit() {
