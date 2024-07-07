@@ -17,6 +17,10 @@ window.onload = function() {
         "description": "API endpoints for artificial intelligence content from various platforms."
       },
       {
+        "name": "Anime",
+        "description": "API endpoints for anime content from various platforms."
+      },
+      {
         "name": "Downloader",
         "description": "API endpoints for downloader anything from various platforms."
       },
@@ -215,6 +219,93 @@ window.onload = function() {
             "in": "query",
             "required": true,
             "description": "Thinkany AI",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/anime/kazesub": {
+      "get": { 	
+      "tags": [
+          "Anime"
+        ],
+   	"parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "description": "Anime Kaze Fury (pedo)",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/anime/kiryu": {
+      "get": { 	
+      "tags": [
+          "Anime"
+        ],
+   	"parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "description": "Anime kiryu",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/anime/kusonime": {
+      "get": { 	
+      "tags": [
+          "Anime"
+        ],
+   	"parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "description": "Anime kusonime",
             "schema": {
               "type": "string"
             }
