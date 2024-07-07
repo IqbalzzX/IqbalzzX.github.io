@@ -37,7 +37,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "text": "query",
+            "name": "text",
             "in": "query",
             "required": true,
             "description": "Blackbox AI",
@@ -66,7 +66,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "text": "query",
+            "name": "text",
             "in": "query",
             "required": true,
             "description": "Chatbot AI",
@@ -95,7 +95,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "text": "query",
+            "name": "text",
             "in": "query",
             "required": true,
             "description": "Chatgpt AI",
@@ -124,7 +124,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "text": "query",
+            "name": "text",
             "in": "query",
             "required": true,
             "description": "Gooday AI",
@@ -153,7 +153,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "text": "query",
+            "name": "text",
             "in": "query",
             "required": true,
             "description": "Talk AI",
@@ -182,7 +182,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "text": "query",
+            "name": "text",
             "in": "query",
             "required": true,
             "description": "talkimg AI",
@@ -211,7 +211,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "text": "query",
+            "name": "text",
             "in": "query",
             "required": true,
             "description": "Thinkany AI",
@@ -240,7 +240,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "url": "query",
+            "name": "url",
             "in": "query",
             "required": true,
             "description": "Downloader Capcut",
@@ -269,7 +269,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "url": "query",
+            "name": "url",
             "in": "query",
             "required": true,
             "description": "Downloader Cocofun",
@@ -298,7 +298,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "url": "query",
+            "name": "url",
             "in": "query",
             "required": true,
             "description": "Downloader Instagram",
@@ -327,7 +327,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "url": "query",
+            "name": "url",
             "in": "query",
             "required": true,
             "description": "Downloader Like",
@@ -356,7 +356,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "url": "query",
+            "name": "url",
             "in": "query",
             "required": true,
             "description": "Downloader SoundCloud",
@@ -385,7 +385,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "url": "query",
+            "name": "url",
             "in": "query",
             "required": true,
             "description": "Downloader Spotify",
@@ -414,7 +414,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "url": "query",
+            "name": "url",
             "in": "query",
             "required": true,
             "description": "Downloader Snackvideo",
@@ -443,7 +443,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "url": "query",
+            "name": "url",
             "in": "query",
             "required": true,
             "description": "Downloader Tiktok",
@@ -472,7 +472,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "url": "query",
+            "name": "url",
             "in": "query",
             "required": true,
             "description": "Downloader Twitter",
@@ -539,7 +539,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "query": "query",
+            "name": "query",
             "in": "query",
             "required": true,
             "description": "Searching SoundCloud",
@@ -568,7 +568,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "query": "query",
+            "name": "query",
             "in": "query",
             "required": true,
             "description": "Searching Spotify",
@@ -597,7 +597,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "text": "query",
+            "name": "text",
             "in": "query",
             "required": true,
             "description": "massukan parameter text",
@@ -606,7 +606,7 @@ window.onload = function() {
             }
           },
           {
-            "name": "query",
+            "name": "name",
             "in": "query",
             "required": true,
             "description": "massukan parameter name",
@@ -615,7 +615,7 @@ window.onload = function() {
             }
           },
           {
-            "imageUrl": "query",
+            "name": "imageUrl",
             "in": "query",
             "required": true,
             "description": "massukan parameter imageUrl",
@@ -682,7 +682,7 @@ window.onload = function() {
         ],
    	"parameters": [
           {
-            "url": "query",
+            "name": "url",
             "in": "query",
             "required": true,
             "description": "masukkan parameter url",
@@ -691,7 +691,7 @@ window.onload = function() {
             }
           },
           {
-            "device": "query",
+            "name": "device",
             "in": "query",
             "required": true,
             "description": "massukan parameter device",
