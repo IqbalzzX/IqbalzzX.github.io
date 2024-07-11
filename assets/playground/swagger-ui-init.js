@@ -25,6 +25,10 @@ window.onload = function() {
         "description": "API endpoints for downloader anything from various platforms."
       },
       {
+        "name": "Random",
+        "description": "API endpoints for random content from various platforms."
+      },
+      {
         "name": "Searching",
         "description": "API endpoints for searching content from various platforms."
       },
@@ -625,6 +629,35 @@ window.onload = function() {
             "in": "query",
             "required": true,
             "description": "Downloader Twitter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/random/tiktok": {
+      "get": { 	
+      "tags": [
+          "Random"
+        ],
+   	"parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "description": "Random Tiktok",
             "schema": {
               "type": "string"
             }
