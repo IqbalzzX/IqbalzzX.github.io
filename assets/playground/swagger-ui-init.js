@@ -440,6 +440,64 @@ window.onload = function() {
          }
        }
      },
+     "/downloader/mediafire": {
+      "get": { 	
+      "tags": [
+          "Downloader"
+        ],
+   	"parameters": [
+          {
+            "name": "url",
+            "in": "query",
+            "required": true,
+            "description": "Downloader MediaFire",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/downloader/pinterest": {
+      "get": { 	
+      "tags": [
+          "Downloader"
+        ],
+   	"parameters": [
+          {
+            "name": "url",
+            "in": "query",
+            "required": true,
+            "description": "Downloader pinterest",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+   "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
      "/downloader/soundcloud": {
       "get": { 	
       "tags": [
@@ -605,6 +663,64 @@ window.onload = function() {
             "in": "query",
             "required": true,
             "description": "page lahelu.com",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/searching/pinterest": {
+      "get": { 	
+      "tags": [
+          "Searching"
+        ],
+   	"parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "description": "Searching pinterest",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/searching/resepmasakan": {
+      "get": { 	
+      "tags": [
+          "Searching"
+        ],
+   	"parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "description": "Searching resepmasakan",
             "schema": {
               "type": "string"
             }
