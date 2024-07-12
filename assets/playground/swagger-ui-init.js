@@ -33,6 +33,10 @@ window.onload = function() {
         "description": "API endpoints for searching content from various platforms."
       },
       {
+        "name": "Stalker",
+        "description": "API endpoints for stalker content from various platforms."
+      },
+      {
         "name": "Tools",
         "description": "API endpoints for tools content from various platforms."
       }
@@ -812,6 +816,218 @@ window.onload = function() {
             "in": "query",
             "required": true,
             "description": "Searching Spotify",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/stalker/freefire": {
+      "get": { 	
+      "tags": [
+          "Stalker"
+        ],
+   	"parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "description": "Stalker Game Free Fire",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/stalker/github": {
+      "get": { 	
+      "tags": [
+          "Stalker"
+        ],
+   	"parameters": [
+          {
+            "name": "username",
+            "in": "query",
+            "required": true,
+            "description": "Stalker Accont Github",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/stalker/instagram": {
+      "get": { 	
+      "tags": [
+          "Stalker"
+        ],
+   	"parameters": [
+          {
+            "name": "username",
+            "in": "query",
+            "required": true,
+            "description": "Stalker Account Instagram",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/stalker/mobilelegend": {
+      "get": { 	
+      "tags": [
+          "Stalker"
+        ],
+   	"parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "description": "Stalker Game Mobile Legend Bang Bang",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "server",
+            "in": "query",
+            "required": true,
+            "description": "Stalker Game Mobile Legend Bang Bang",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/stalker/npm": {
+      "get": { 	
+      "tags": [
+          "Stalker"
+        ],
+   	"parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "description": "Stalker Package",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/stalker/tiktok": {
+      "get": { 	
+      "tags": [
+          "Stalker"
+        ],
+   	"parameters": [
+          {
+            "name": "username",
+            "in": "query",
+            "required": true,
+            "description": "Stalker Account Tiktok",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
+     "/stalker/twitter": {
+      "get": { 	
+      "tags": [
+          "Stalker"
+        ],
+   	"parameters": [
+          {
+            "name": "username",
+            "in": "query",
+            "required": true,
+            "description": "Stalker Account Twitter",
             "schema": {
               "type": "string"
             }
