@@ -834,6 +834,35 @@ window.onload = function() {
          }
        }
      },
+     "/searching/tiktok": {
+      "get": { 	
+      "tags": [
+          "Searching"
+        ],
+   	"parameters": [
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "description": "Searching Tiktok",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+           "200": {
+           "description": "Successfully operation"
+           },
+           "400": {
+           "description": "Bad request"
+           },
+           "500": {
+           "description": "Internal Server Error"
+           }
+         }
+       }
+     },
      "/stalker/freefire": {
       "get": { 	
       "tags": [
