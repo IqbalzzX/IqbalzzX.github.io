@@ -9,7 +9,7 @@ window.onload = function() {
   var options = {
   "swaggerDoc": {
     "swagger": "2.0",
-    "host": "sakura-jade.vercel.app/api",
+    "host": "api.saakura.cloud/api",
     "basePath": "/",
     "tags": [
       {
